@@ -64,17 +64,23 @@
                         {
                             id: 1,
                             title: 'Jajecznica',
-                            shortContent: 'Z jajek prosto od kury'
+                            shortContent: 'Z jajek prosto od kury',
+                            content: 'Danie niedostępne',
+                            showContent: false
                         },
                         {
                             id: 2,
                             title: 'Kompot',
-                            shortContent: 'Ze słodkich winogron'
+                            shortContent: 'Ze słodkich winogron',
+                            content: 'Danie niedostępne',
+                            showContent: true
                         },
                         {
                             id: 3,
                             title: 'Kurczak smażony',
-                            shortContent: 'Na ostro'
+                            shortContent: 'Na ostro',
+                            content: 'Danie niedostępne',
+                            showContent: false
                         }
                     ];
 
@@ -82,7 +88,9 @@
                                 <Post
                                     key={el.id}
                                     title = {el.title}
-                                    shortContent = {el.shortContent} />
+                                    shortContent = {el.shortContent}
+                                    content={el.content}
+                                    showContent={el.showContent} />
                                 ));
 
                     return(

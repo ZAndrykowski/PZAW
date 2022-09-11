@@ -18,17 +18,25 @@
           <script type="text/babel">
                const Title = () => <h1>Tytuł</h1>
                const Post = (props) => { //props = wartości
+                const [showContent, setShowContent] = React.useState(false);
+                const showButtonOrder = () => {
+                    console.log('Przycisk został wciśniety'),
+                    //showContent = true;
+                    setShowContent(true);
+                }
+
+                
                     return (
                         <div>
                             <h2>{props.title}</h2>
                             <p>{props.shortContent}</p>
-                            {props.show ? ( //? - IF
+                            {showContent ? ( //? - IF
                                 <p>{props.content}</p>)
                                 : //: - ELSE
                                 (
                                     <React.Fragment>
-                                    <p>'Kliknij aby zamówić'</p>
-                                    <button>Zamów</button>
+                                    <p>Kliknij aby zamówić</p>
+                                    <button onClick={showButtonOrder}>Zamów</button>
                                     </React.Fragment>
                                 )
                                 }
@@ -75,32 +83,31 @@
                             id: 1,
                             title: 'Jajecznica',
                             shortContent: 'Z jajek prosto od kury',
-                            content: 'Danie niedostępne',
-                            showContent: false
+                            content: 'Danie niedostępne'
                         },
                         {
                             id: 2,
                             title: 'Kompot',
                             shortContent: 'Ze słodkich winogron',
-                            content: 'Danie niedostępne',
-                            showContent: false
+                            content: 'Danie niedostępne'
                         },
                         {
                             id: 3,
                             title: 'Kurczak smażony',
                             shortContent: 'Na ostro',
-                            content: 'Danie niedostępne',
-                            showContent: true
+                            content: 'Danie niedostępne'
                         }
                     ];
 
                     const daniaList = dania.map(el => (
                                 <Post
                                     key={el.id}
-                                    title = {el.title}
-                                    shortContent = {el.shortContent}
-                                    content={el.content}
-                                    show={el.showContent} />
+                                    {...el}
+                                    // title = {el.title}
+                                    // shortContent = {el.shortContent}
+                                    // content={el.content}
+                                    // showContent={el.showContent} 
+                                    />
                                 ));
 
                     return(

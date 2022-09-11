@@ -22,8 +22,18 @@
                         <div>
                             <h2>{props.title}</h2>
                             <p>{props.shortContent}</p>
+                            {props.show ? ( //? - IF
+                                <p>{props.content}</p>)
+                                : //: - ELSE
+                                (
+                                    <React.Fragment>
+                                    <p>'Kliknij aby zamówić'</p>
+                                    <button>Zamów</button>
+                                    </React.Fragment>
+                                )
+                                }
                             <p></p>
-                            <button>Zamów</button>
+                            
                             <hr/>
                         </div>
                     );
@@ -73,14 +83,14 @@
                             title: 'Kompot',
                             shortContent: 'Ze słodkich winogron',
                             content: 'Danie niedostępne',
-                            showContent: true
+                            showContent: false
                         },
                         {
                             id: 3,
                             title: 'Kurczak smażony',
                             shortContent: 'Na ostro',
                             content: 'Danie niedostępne',
-                            showContent: false
+                            showContent: true
                         }
                     ];
 
@@ -90,7 +100,7 @@
                                     title = {el.title}
                                     shortContent = {el.shortContent}
                                     content={el.content}
-                                    showContent={el.showContent} />
+                                    show={el.showContent} />
                                 ));
 
                     return(

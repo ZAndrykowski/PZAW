@@ -16,7 +16,7 @@
           <div id="root2"></div>
 
           <script type="text/babel">
-               const Title = (props) => <h1>{props.value}</h1>
+               const Title = () => <h1>Tytuł</h1>
                const Post = (props) => { //props = wartości
                     return (
                         <div>
@@ -60,15 +60,35 @@
 
                const Dania = function()
                {
+                    const dania = [ //TABLICA DAŃ
+                        {
+                            id: 1,
+                            title: 'Jajecznica',
+                            shortContent: 'Z jajek prosto od kury'
+                        },
+                        {
+                            id: 2,
+                            title: 'Kompot',
+                            shortContent: 'Ze słodkich winogron'
+                        },
+                        {
+                            id: 3,
+                            title: 'Kurczak smażony',
+                            shortContent: 'Na ostro'
+                        }
+                    ];
+
+                    const daniaList = dania.map(el => (
+                                <Post
+                                    key={el.id}
+                                    title = {el.title}
+                                    shortContent = {el.shortContent} />
+                                ));
+
                     return(
                         <div>
                             <p>Dostępne dania</p>
-                            <Post 
-                                title="Jajecznica"
-                                shortContent="Z świeżych jaj"/>
-
-                            <Post title="Kompot"
-                                shortContent="Z świeżych winogron"/>
+                            {daniaList} 
 
                         </div>
 

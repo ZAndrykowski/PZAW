@@ -53,3 +53,5 @@ Elementy:
     Nadawanie roli;
     ROLE (Admin, Manager, Kelner);
   PODGLĄD REZERWACJI = PODSUMOWANIE + Potwierdzenie/Usuniecie rezerwacji;
+
+

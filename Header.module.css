@@ -1,0 +1,13 @@
+.header {
+    height: 40px;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.button{
+    height: 50%;
+    color: aqua;
+}
+

@@ -55,3 +55,34 @@ Elementy:
   PODGLĄD REZERWACJI = PODSUMOWANIE + Potwierdzenie/Usuniecie rezerwacji;
 
 
+PROJEKTY NA ZALICZENIE:
+1. Aplikacja Wej/Wyj z pracy, powinna zawierać elementy:
+a) Logowanie za pomocą karty zawierającej ID / LUB RĘCZNEMU Z PODANIEM HASŁA
+b) "Przerwa"
+c) Rejestr wejść
+d) Nieupoważnione wejście
+e) Informacja o spóźnieniu
+f)* DODANIE NOWEJ OSOBY / USUNIECIE BYŁEGO PRACOWNIKA
+
+2. Aplikacja rzutu Rpgową kością
+a) Możliwość wyboru liczby graczy
+b) Dodawanie dodatkowych parametrów (np. jakieś przewagi typu +1 do rzutu)
+c) Przypisanie stałych wartości graczom (np. siła, zręczność itd.) - Możliwość wyświetlenia ich podsumowania
+d) Przygotowanie makr (np. gotowy rzut na inicjatywe dla wszystkich graczy/ dla wybranych)
+e) ZWYKŁY RZUT WYBRANĄ KOŚCIĄ(K2, K4, K6, K8, K10, K20) DLA WYBRANEGO GRACZA
+
+3. Aplikacja z zabytkami z danego województwa
+a) Lista zabytków
+b) Wyszukiwarka
+c) Trasa z pobliskiej miejscowości/ Punkt na mapie
+d) Zapamiętanie ULUBIONYCH
+e) Krótki opis zabytków wraz z zdjęciem
+f)* Wykorzystanie jednego z dostawców map(Google, OpenStreetMap, itd.) aby utworzył trasę do wykorzystania
+
+4.* Prosty Komunikator
+a) Logowanie/Wylogowanie
+b) Wysyłanie wiadomości
+c) Historie wyslanych wiadomości
+d) Może możliwość wysłania małych plików (do 10mb)
+e) Odczytywanie wiadomości
+
